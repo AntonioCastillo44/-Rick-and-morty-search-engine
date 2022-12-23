@@ -1,0 +1,240 @@
+@font-face {
+    font-family: "shop rg";
+    src: 
+    url(' ../public/fonts/shlop-rg.woff2 ') format("woff2"),
+    url(' ../public/fonts/shlop-rg.woff ') format("woff"),
+    url(' ../public/fonts/shlop-rg.ttf ') format("truetype");
+    font-display: swap;
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    margin: 0;
+    background: rgb(67,84,244);
+    background: radial-gradient(circle, rgba(67,84,244,1) -50%, rgba(53,25,77,1) 100%);
+    color: rgb(255, 255, 255);
+    font-family: 'Noto Sans', sans-serif;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .span{
+    color: black;
+    font-weight: bold;
+  }
+  input::placeholder {
+    color: rgb(24, 23, 23);
+    font-style: italic;
+    letter-spacing: 2px;
+  }
+
+.App{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.App__img{
+  width: 100vw;
+  height: 200px; 
+  background-image: url('./img/Rick-and-Morty-Driving-Live-Wallpaper-Free.gif');
+  background-repeat: no-repeat;
+  background-size : cover;
+  background-position: center;
+}
+ .App__h1{
+    font-family: "shop rg";
+    font-size: 45px;
+    margin: 0;
+    color: #7FA1C6;
+    text-align: center;
+    margin: 25px 0;
+    text-shadow:  #ff65bb 1px 0 10px;
+    letter-spacing: 2px;
+} 
+.App__form{
+  width: 80vw;
+}
+.App__input{
+ width: 90%;
+ height: 30px;
+ border-radius: 10px;
+ background: #ff65bc50;
+ color: rgb(255, 255, 255);
+ border: 0;
+ outline: 0px;
+ text-align: center;
+ border-bottom: 1px solid #02bcffa2; 
+}
+.App__input:focus{
+  height: 40px;
+  border-bottom: 3px solid #02bcffa2;
+  transition: all 0.3s ease;
+}
+.App__btn{
+border: none;
+background: none;
+cursor: pointer;
+padding: 0 0 0 5px;
+position: absolute;
+}
+
+
+.Location{
+  border-radius: 10px;
+  width: 80%;
+  background: #7FA1C6;
+  margin: 25px 0;
+  border:4px solid rgb(255, 255, 255);
+}
+.Location__h3{
+    text-align: center;
+}
+.Location__ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Location__li{
+  margin: 0 10px 15px 10px;
+  text-align: center;
+}
+
+
+.ResidentInfo{
+  background: #7FA1C6;
+  border:5px solid #7FA1C6;
+  border-radius: 10px;
+  width: 280px;
+  height: auto;
+  margin: 20px;
+}
+.ResidentInfo__content{
+  border:2px solid rgb(255, 255, 255);
+  border-radius: 10px;
+}
+.ResidentInfo__div__img{
+  padding: 15px 0 0 0; 
+  margin: 0 40px;
+  width: 200px;
+  height: auto;
+}
+.ResidentInfo__img{
+  width:300px;
+  height:auto;
+  border-radius:160px;
+  border:5px solid rgb(255, 255, 255);
+}
+.ResidentInfo__div__inf{
+  padding: 10px 0 15px 0;
+  margin: 0 0 10px 40px;
+}
+.ResidentInfo__h3{
+  text-align: center;
+  margin: 0 0 10px 0;
+}
+.ResidentInfo__h3.Dead{
+  text-decoration:line-through black;
+}
+.li{
+  text-align: right;
+  padding: 0 15px 0 0;
+  margin: 15px 0 0 0;
+}
+
+.copyright{
+  color:#7FA1C6;
+  text-align: center;
+  border-top: 1px solid #222;
+  padding: 1rem;
+  margin: 0;
+  font-style: italic;
+}
+
+.loading{
+ text-align: center;
+}
+
+@media screen and (min-width: 720px) {
+  input::placeholder {
+    letter-spacing: 4px;
+  }
+
+  .App__img{
+    height: 400px; 
+  }
+  .App__h2{
+    padding-right: 70%;
+    } 
+  .App__h1{
+    font-size: 80px;
+  } 
+  .App__input{
+    width: 95%;
+   }
+   .Location__li{
+    margin: 0 35px 15px 35px;
+  }
+ }
+
+ @media screen and (min-width: 920px) {
+  .App__h1{
+    font-size: 110px;
+  } 
+   .Location__li{
+    margin: 0 75px 15px 75px;
+  }
+  .Div__ResidentInfo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap : wrap;
+    width: 90%;
+    height: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  input::placeholder {
+    letter-spacing: 6px;
+  }
+
+  .App__h1{
+    font-size: 150px;
+  } 
+  .Location__li{
+   margin: 0 115px 15px 115px;
+ }
+}
+
+@media screen and (min-width: 1400px) {
+  .App__h1{
+    font-size: 180px;
+  } 
+  .App__input{
+    width: 97%;
+   }
+  .Location__li{
+   margin: 0 135px 15px 135px;
+ }
+ .Div__ResidentInfo{
+  width: 80%;
+}
+}
