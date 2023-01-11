@@ -1,9 +1,7 @@
 @font-face {
     font-family: shop-rg;
     src: 
-    url(' ../public/fonts/shlop-rg.woff2 ') format("woff2"),
-    url(' ../public/fonts/shlop-rg.woff ') format("woff"),
-    url(' ../public/fonts/shlop-rg.ttf ') format("truetype");
+    url('/fonts/shlop-rg.ttf ') format("truetype");
     font-display: swap;
 }
 
